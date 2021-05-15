@@ -77,6 +77,9 @@
     <EmbeddedResource Include="frmStringManV1.resx">
       <DependentUpon>frmStringManV1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmStringMorpher.resx">
+      <DependentUpon>frmStringMorpher.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

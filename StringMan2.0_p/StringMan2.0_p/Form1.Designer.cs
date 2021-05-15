@@ -31,16 +31,16 @@ namespace StringMan2._0_p
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
             this.lblChooseanOption = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblStringManV1Title = new System.Windows.Forms.Label();
+            this.pnlShowStringManV1 = new System.Windows.Forms.Panel();
             this.lblStringManV1Descr = new System.Windows.Forms.Label();
+            this.lblStringManV1Title = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblSQlQueryTitle = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.pnlShowStringManV1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -56,27 +56,17 @@ namespace StringMan2._0_p
             this.lblChooseanOption.Text = "Select an Utility to Launch";
             this.lblChooseanOption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel1
+            // pnlShowStringManV1
             // 
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.lblStringManV1Descr);
-            this.panel1.Controls.Add(this.lblStringManV1Title);
-            this.panel1.Location = new System.Drawing.Point(12, 54);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(382, 72);
-            this.panel1.TabIndex = 1;
-            // 
-            // lblStringManV1Title
-            // 
-            this.lblStringManV1Title.AutoSize = true;
-            this.lblStringManV1Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStringManV1Title.ForeColor = System.Drawing.Color.Black;
-            this.lblStringManV1Title.Location = new System.Drawing.Point(3, 10);
-            this.lblStringManV1Title.Name = "lblStringManV1Title";
-            this.lblStringManV1Title.Size = new System.Drawing.Size(83, 13);
-            this.lblStringManV1Title.TabIndex = 0;
-            this.lblStringManV1Title.Text = "StringMan V1";
+            this.pnlShowStringManV1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlShowStringManV1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlShowStringManV1.Controls.Add(this.lblStringManV1Descr);
+            this.pnlShowStringManV1.Controls.Add(this.lblStringManV1Title);
+            this.pnlShowStringManV1.Location = new System.Drawing.Point(12, 54);
+            this.pnlShowStringManV1.Name = "pnlShowStringManV1";
+            this.pnlShowStringManV1.Size = new System.Drawing.Size(382, 72);
+            this.pnlShowStringManV1.TabIndex = 1;
+            this.pnlShowStringManV1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlShowStringManV1_Paint);
             // 
             // lblStringManV1Descr
             // 
@@ -89,6 +79,17 @@ namespace StringMan2._0_p
             this.lblStringManV1Descr.TabIndex = 1;
             this.lblStringManV1Descr.Text = "The original stringman utility. Add values before and after\r\nevery line instantly" +
     ".";
+            // 
+            // lblStringManV1Title
+            // 
+            this.lblStringManV1Title.AutoSize = true;
+            this.lblStringManV1Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStringManV1Title.ForeColor = System.Drawing.Color.Black;
+            this.lblStringManV1Title.Location = new System.Drawing.Point(3, 10);
+            this.lblStringManV1Title.Name = "lblStringManV1Title";
+            this.lblStringManV1Title.Size = new System.Drawing.Size(83, 13);
+            this.lblStringManV1Title.TabIndex = 0;
+            this.lblStringManV1Title.Text = "StringMan V1";
             // 
             // panel2
             // 
@@ -164,15 +165,15 @@ namespace StringMan2._0_p
             this.ClientSize = new System.Drawing.Size(406, 592);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlShowStringManV1);
             this.Controls.Add(this.lblChooseanOption);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Menu - StringMan2.0";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlShowStringManV1.ResumeLayout(false);
+            this.pnlShowStringManV1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -184,7 +185,7 @@ namespace StringMan2._0_p
         #endregion
 
         private System.Windows.Forms.Label lblChooseanOption;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlShowStringManV1;
         private System.Windows.Forms.Label lblStringManV1Title;
         private System.Windows.Forms.Label lblStringManV1Descr;
         private System.Windows.Forms.Panel panel2;

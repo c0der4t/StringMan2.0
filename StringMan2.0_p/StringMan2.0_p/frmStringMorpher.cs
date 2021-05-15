@@ -16,5 +16,10 @@ namespace StringMan2._0_p
         {
             InitializeComponent();
         }
+
+        private void frmStringMorpher_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
